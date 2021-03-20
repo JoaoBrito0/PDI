@@ -13,27 +13,27 @@ function Dashboard() {
     return (
         <div className='Dash'>
             <Container>
-                <Row className='mt-5'>
-                    <Col className='border rounded'>
-                        <p className='totals'>Total Balance</p>
-                        <p>2000€</p>
-                    </Col>
+                <Row className='mt-5 space'>
+                        <Col className='border border rounded bg-blue'>
+                            <p className='totals'>Total Balance</p>
+                            <p className="amount">2000€</p>
+                        </Col>
 
-                    <Col className='border rounded'>
-                        <p className='totals'>Monthly Income</p>
-                        <p>2000€</p>
-                    </Col>
+                        <Col className='border rounded bg-green'>
+                            <p className='totals'>Monthly Income</p>
+                            <p className="amount">2000€</p>
+                        </Col>
 
-                    <Col className='border rounded'>
-                        <p className='totals'>Monthly Expenses</p>
-                        <p>2000€</p>
-                    </Col>
+                        <Col className='border rounded bg-red'>
+                            <p className='totals'>Monthly Expenses</p>
+                            <p className="amount">2000€</p>
+                        </Col>
 
-                    <Col className='border rounded'> 
-                        <p className='totals'>Budget Progress</p>
-                        <p>2000€</p>
-                    </Col>
-                </Row>
+                        <Col className='border rounded bg-ye'> 
+                            <p className='totals'>Budget Progress</p>
+                            <p className="amount">2000€</p>
+                        </Col>
+                    </Row>
                 <span></span>
                 <Row>
 
