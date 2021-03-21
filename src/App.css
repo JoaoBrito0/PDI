@@ -25,7 +25,7 @@ body {
     width: 100%;
 }
 
-.Dash {
+.dash {
     padding-left: 250px;
 }
 
@@ -88,22 +88,3 @@ body {
     padding: 10px;
 }
 
-.bg-blue {
-    background: linear-gradient(300deg, #4949ff 25%, #1f1498 75%);
-    border-color: white;
-}
-
-.bg-green {
-    background: linear-gradient(300deg, #63d471 25%, #233329 75%);
-    border-color: white;
-}
-
-.bg-red {
-    background: linear-gradient(to right, #6e0c07 0%, #ff3300 100%);
-    border-color: white;
-}
-
-.bg-ye {
-    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-    border-color: white;
-}

@@ -5,7 +5,7 @@ import {
 
 function Budget() {
     return (
-        <div>
+        <div className='dash'>
             <Container>
                 <h1>Budget</h1> 
             </Container>

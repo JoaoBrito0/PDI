@@ -6,7 +6,7 @@ import {
 
 function Goals() {
     return (
-        <div>
+        <div className='dash'>
             <Container>
                 <h1>Goals</h1>
             </Container>
