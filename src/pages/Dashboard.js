@@ -23,7 +23,7 @@ function Dashboard() {
                 <Row>
                    <LastAddedTable />
                     <Col>
-                        <NewIncome amountLabel={amountLabel} setAmountLabel={setAmountLabel} income={income} setIncome={setIncome}/>
+                        <NewIncome amountLabel={amountLabel} setAmountLabel={setAmountLabel} income={income} setIncome={setIncome} />
                      </Col>
                 </Row>
 
