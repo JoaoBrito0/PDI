@@ -1,8 +1,10 @@
 import React from 'react';
-import {Col,Table,thead,tr,th,tobdy} from 'react-bootstrap';
+import {Col,Table} from 'react-bootstrap';
 import TableRow from './TableRow';
 
-function LastAddedTable(){
+function LastAddedTable({income}){
+    let itemsToRender;
+
     return(
         <Col>
             <h2>Last Added</h2>
@@ -17,6 +19,9 @@ function LastAddedTable(){
                 <tbody>
                     <TableRow categoria="House" balanco="500" descricao="Morgage payment"/>
                     <TableRow categoria="Food" balanco="25" descricao="Groceries"/>
+                    {income.map((x) => (
+                        <TableRow categoria="Food" balanco={x.balanco} descricao="Groceries"/>
+                    ))}
                 </tbody>
             </Table>            
         </Col>

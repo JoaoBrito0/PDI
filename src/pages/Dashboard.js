@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {
     Container,
     Row,
@@ -9,8 +9,12 @@ import {
 } from "react-bootstrap"
 import Top from '../components/TopRow/Top';
 import LastAddedTable from '../components/LastAdded/LastAddedTable';
+import NewIncome from '../components/NewIncome/NewIncome';
 
 function Dashboard() {
+    const[amountLabel, setAmountLabel] = useState(0);
+    const[income, setIncome] = useState([]);
+
     return ( 
         <div className='dash'>
             <Container>
@@ -19,26 +23,7 @@ function Dashboard() {
                 <Row>
                    <LastAddedTable />
                     <Col>
-                        <Form>
-                            <h2>Add new Income/Expense</h2>
-                            <Form.Group controlId="exampleForm.ControlSelect1">
-                            <Form.Label>Category</Form.Label>
-                            <Form.Control as="select">
-                            <option>House</option>
-                            <option>Food</option>
-                            <option>Shopping</option>
-                            </Form.Control>
-                            </Form.Group>
-                            <Form.Group>
-                            <Form.Label>Amount</Form.Label>
-                            <Form.Control type="text" placeholder="Amount" />
-                            </Form.Group>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Description</Form.Label>
-                            <Form.Control as="textarea" rows={2} />
-                            </Form.Group>
-                            <Button variant="primary" type="submit" block>Add</Button>                                        
-                        </Form>
+                        <NewIncome amountLabel={amountLabel} setAmountLabel={setAmountLabel} income={income} setIncome={setIncome}/>
                      </Col>
                 </Row>
 
